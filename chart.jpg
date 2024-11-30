@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<!-- saved from url=(0081)https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/charts.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link rel="apple-touch-icon" sizes="76x76" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/assets/img/apple-icon.png">
+<link rel="icon" type="image/png" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/assets/img/favicon.png">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Light Bootstrap Dashboard PRO - Premium Bootstrap 4 Admin Template by Creative Tim</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no" name="viewport">
+
+<link rel="canonical" href="https://www.creative-tim.com/product/light-bootstrap-dashboard-pro">
+
+<meta name="keywords" content="creative tim, html dashboard, html css dashboard, web dashboard, bootstrap 4 dashboard, bootstrap 4, css3 dashboard, bootstrap 4 admin, light bootstrap 4 dashboard, frontend, responsive bootstrap dashboard">
+<meta name="description" content="Forget about boring dashboards, get a bootstrap 4 admin template designed to be simple and beautiful.">
+
+<meta itemprop="name" content="Light Bootstrap Dashboard PRO by Creative Tim">
+<meta itemprop="description" content="Forget about boring dashboards, get a bootstrap 4 admin template designed to be simple and beautiful.">
+<meta itemprop="image" content="https://s3.amazonaws.com/creativetim_bucket/products/34/original/opt_lbd_pro_thumbnail.jpg">
+
+<meta name="twitter:card" content="product">
+<meta name="twitter:site" content="@creativetim">
+<meta name="twitter:title" content="Light Bootstrap Dashboard PRO by Creative Tim">
+<meta name="twitter:description" content="Forget about boring dashboards, get a bootstrap 4 admin template designed to be simple and beautiful.">
+<meta name="twitter:creator" content="@creativetim">
+<meta name="twitter:image" content="https://s3.amazonaws.com/creativetim_bucket/products/34/original/opt_lbd_pro_thumbnail.jpg">
+<meta name="twitter:data1" content="Light Bootstrap Dashboard PRO by Creative Tim">
+<meta name="twitter:label1" content="Product Type">
+<meta name="twitter:data2" content="$39">
+<meta name="twitter:label2" content="Price">
+
+<meta property="og:title" content="Light Bootstrap Dashboard PRO by Creative Tim">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/dashboard.html">
+<meta property="og:image" content="https://s3.amazonaws.com/creativetim_bucket/products/34/original/opt_lbd_pro_thumbnail.jpg">
+<meta property="og:description" content="Forget about boring dashboards, get a bootstrap 4 admin template designed to be simple and beautiful.">
+<meta property="og:site_name" content="Creative Tim">
+
+<link href="./chart_files/css" rel="stylesheet">
+<link rel="stylesheet" href="./chart_files/font-awesome.min.css">
+
+<link href="./chart_files/bootstrap.min.css" rel="stylesheet">
+<link href="./chart_files/light-bootstrap-dashboard.css" rel="stylesheet">
+
+<link href="./chart_files/demo.css" rel="stylesheet">
+
+<script src="./chart_files/token_create.js.download"></script><script async="" src="./chart_files/main.f74ed22b.js.download"></script><script type="text/javascript" async="" src="./chart_files/js"></script><script type="text/javascript" async="" src="./chart_files/js(1)"></script><script type="text/javascript" async="" src="https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=CC6UAQBC77U7GVKHLC4G&amp;lib=ttq"></script><script type="text/javascript" async="" src="./chart_files/insight.min.js.download"></script><script type="text/javascript" async="" src="./chart_files/core.js.download"></script><script type="text/javascript" async="" src="./chart_files/analytics.js.download"></script><script src="https://connect.facebook.net/signals/config/111649226022273?v=2.9.158&amp;r=stable&amp;domain=demos.creative-tim.com&amp;hme=446fb981c8c3baeb03730fe3cbd404f7f15f64c693f24c7fe75da498bc2c95d8&amp;ex_m=67%2C113%2C100%2C104%2C58%2C3%2C93%2C66%2C15%2C91%2C84%2C49%2C51%2C160%2C163%2C174%2C170%2C171%2C173%2C28%2C94%2C50%2C73%2C172%2C155%2C158%2C167%2C168%2C175%2C122%2C14%2C48%2C180%2C179%2C124%2C17%2C33%2C38%2C1%2C41%2C62%2C63%2C64%2C68%2C88%2C16%2C13%2C90%2C87%2C86%2C101%2C103%2C37%2C102%2C29%2C25%2C156%2C159%2C131%2C27%2C10%2C11%2C12%2C5%2C6%2C24%2C21%2C22%2C54%2C59%2C61%2C71%2C95%2C26%2C72%2C8%2C7%2C76%2C46%2C20%2C97%2C96%2C98%2C9%2C19%2C18%2C81%2C53%2C79%2C32%2C70%2C0%2C89%2C31%2C78%2C83%2C45%2C44%2C82%2C36%2C4%2C85%2C77%2C42%2C39%2C34%2C80%2C2%2C35%2C60%2C40%2C99%2C43%2C75%2C65%2C105%2C57%2C56%2C30%2C92%2C55%2C52%2C47%2C74%2C69%2C23%2C106" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript" async="" src="./chart_files/ga.js.download"></script><script async="" src="./chart_files/gtm.js.download"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NKDMSK6');</script>
+
+<meta http-equiv="origin-trial" content="A3dA86xx3SygInSznfsu98uiaY4VmGo/CaJTGvdsIU5xobyXgN1lb1smNdWPEoeyz54s3L60Kdxmc4VJmUrrIgoAAACVeyJvcmlnaW4iOiJodHRwczovL2N0LnBpbnRlcmVzdC5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZyIsImV4cGlyeSI6MTcyNTQwNzk5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><script type="text/javascript" charset="UTF-8" src="./chart_files/common.js.download"></script><script type="text/javascript" charset="UTF-8" src="./chart_files/util.js.download"></script></head>
+<body><div id="ofBar"><div id="ofBar-logo"> <img alt="creative-tim-logo" src="./chart_files/logo-ct-black.png"></div><div id="ofBar-content"><b>50% off Creative Tim Club!</b> 🎉 Lifetime access to all current &amp; future products. Limited time offer! ✨</div><div id="ofBar-right"><a href="https://www.creative-tim.com/club?ref=ct-demos" target="_blank" id="btn-bar">View Offer</a><a id="close-bar">×</a></div></div>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKDMSK6"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div class="wrapper">
+<div class="sidebar" data-color="orange" data-image="../assets/img/sidebar-5.jpg">
+
+<div class="sidebar-wrapper">
+<div class="logo">
+<a href="https://www.creative-tim.com/" class="simple-text logo-mini">
+Ct
+</a>
+<a href="https://www.creative-tim.com/" class="simple-text logo-normal">
+Creative Tim
+</a>
+</div>
+<div class="user">
+<div class="photo">
+<img src="./chart_files/default-avatar.webp">
+</div>
+<div class="info ">
+<a data-toggle="collapse" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/charts.html#collapseExample" class="collapsed">
+<span>Tania Andrew
+<b class="caret"></b>
+</span>
+</a>
+<div class="collapse" id="collapseExample">
+<ul class="nav">
+<li>
+<a class="profile-dropdown" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/charts.html#pablo">
+<span class="sidebar-mini">MP</span>
+<span class="sidebar-normal">My Profile</span>
+</a>
+</li>
+<li>
+<a class="profile-dropdown" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/charts.html#pablo">
+<span class="sidebar-mini">EP</span>
+<span class="sidebar-normal">Edit Profile</span>
+</a>
+</li>
+<li>
+<a class="profile-dropdown" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/charts.html#pablo">
+<span class="sidebar-mini">S</span>
+<span class="sidebar-normal">Settings</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<ul class="nav">
+<li class="nav-item ">
+<a class="nav-link" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/dashboard.html">
+<i class="nc-icon nc-chart-pie-35"></i>
+<p>Dashboard</p>
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="collapse" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/charts.html#componentsExamples">
+<i class="nc-icon nc-app"></i>
+<p>
+Components
+<b class="caret"></b>
+</p>
+</a>
+<div class="collapse " id="componentsExamples">
+<ul class="nav">
+<li class="nav-item ">
+<a class="nav-link" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/components/buttons.html">
+<span class="sidebar-mini">B</span>
+<span class="sidebar-normal">Buttons</span>
+</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/components/grid.html">
+<span class="sidebar-mini">GS</span>
+<span class="sidebar-normal">Grid System</span>
+</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/components/panels.html">
+<span class="sidebar-mini">P</span>
+<span class="sidebar-normal">Panels</span>
+</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/components/sweet-alert.html">
+<span class="sidebar-mini">SA</span>
+<span class="sidebar-normal">Sweet Alert</span>
+</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/components/notifications.html">
+<span class="sidebar-mini">N</span>
+<span class="sidebar-normal">Notifications</span>
+</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/components/icons.html">
+<span class="sidebar-mini">I</span>
+<span class="sidebar-normal">Icons</span>
+</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/components/typography.html">
+<span class="sidebar-mini">T</span>
+<span class="sidebar-normal">Typography</span>
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="collapse" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/charts.html#formsExamples">
+<i class="nc-icon nc-notes"></i>
+<p>
+Forms
+<b class="caret"></b>
+</p>
+</a>
+<div class="collapse " id="formsExamples">
+<ul class="nav">
+<li class="nav-item ">
+<a class="nav-link" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/forms/regular.html">
+<span class="sidebar-mini">Rf</span>
+<span class="sidebar-normal">Regular Forms</span>
+</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/forms/extended.html">
+<span class="sidebar-mini">Ef</span>
+<span class="sidebar-normal">Extended Forms</span>
+</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/forms/validation.html">
+<span class="sidebar-mini">Vf</span>
+<span class="sidebar-normal">Validation Forms</span>
+</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/forms/wizard.html">
+<span class="sidebar-mini">W</span>
+<span class="sidebar-normal">Wizard</span>
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="collapse" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/charts.html#tablesExamples">
+<i class="nc-icon nc-paper-2"></i>
+<p>
+Tables
+<b class="caret"></b>
+</p>
+</a>
+<div class="collapse " id="tablesExamples">
+<ul class="nav">
+<li class="nav-item ">
+<a class="nav-link" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/tables/regular.html">
+<span class="sidebar-mini">RT</span>
+<span class="sidebar-normal">Regular Tables</span>
+</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/tables/extended.html">
+<span class="sidebar-mini">ET</span>
+<span class="sidebar-normal">Extended Tables</span>
+</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/tables/bootstrap-table.html">
+<span class="sidebar-mini">BT</span>
+<span class="sidebar-normal">Bootstrap Table</span>
+</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/tables/datatables.net.html">
+<span class="sidebar-mini">DT</span>
+<span class="sidebar-normal">DataTables.net</span>
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="collapse" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/charts.html#mapsExamples">
+<i class="nc-icon nc-pin-3"></i>
+<p>
+Maps
+<b class="caret"></b>
+</p>
+</a>
+<div class="collapse " id="mapsExamples">
+<ul class="nav">
+<li class="nav-item ">
+<a class="nav-link" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/maps/google.html">
+<span class="sidebar-mini">GM</span>
+<span class="sidebar-normal">Google Maps</span>
+</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/maps/vector.html">
+<span class="sidebar-mini">VM</span>
+<span class="sidebar-normal">Vector maps</span>
+</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/maps/fullscreen.html">
+<span class="sidebar-mini">FSM</span>
+<span class="sidebar-normal">Full Screen Map</span>
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/charts.html">
+<i class="nc-icon nc-chart-bar-32"></i>
+<p>Charts</p>
+</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/calendar.html">
+<i class="nc-icon nc-single-copy-04"></i>
+<p>Calendar</p>
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="collapse" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/charts.html#pagesExamples">
+<i class="nc-icon nc-puzzle-10"></i>
+<p>
+Pages
+<b class="caret"></b>
+</p>
+</a>
+<div class="collapse " id="pagesExamples">
+<ul class="nav">
+<li class="nav-item ">
+<a class="nav-link" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/pages/login.html">
+<span class="sidebar-mini">LP</span>
+<span class="sidebar-normal">Login Page</span>
+</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/pages/register.html">
+<span class="sidebar-mini">RP</span>
+<span class="sidebar-normal">Register Page</span>
+</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/pages/lock.html">
+<span class="sidebar-mini">LSP</span>
+<span class="sidebar-normal">Lock Screen Page</span>
+</a>
+</li>
+<li class="nav-item  ">
+<a class="nav-link" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/pages/user.html">
+<span class="sidebar-mini">UP</span>
+<span class="sidebar-normal">User Page</span>
+</a>
+</li>
+<li class="nav-item  ">
+<a class="nav-link" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/charts.html#lbd">
+<span class="sidebar-mini">MCS</span>
+<span class="sidebar-normal">More coming soon...</span>
+</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="sidebar-background" style="background-image: url(../assets/img/sidebar-5.jpg) "></div></div>
+<div class="main-panel">
+
+<nav class="navbar navbar-expand-lg ">
+<div class="container-fluid">
+<div class="navbar-wrapper">
+<div class="navbar-minimize">
+<button id="minimizeSidebar" class="btn btn-warning btn-fill btn-round btn-icon d-none d-lg-block">
+<i class="fa fa-ellipsis-v visible-on-sidebar-regular"></i>
+<i class="fa fa-navicon visible-on-sidebar-mini"></i>
+</button>
+</div>
+<a class="navbar-brand" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/charts.html#pablo"> Charts </a>
+</div>
+<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-bar burger-lines"></span>
+<span class="navbar-toggler-bar burger-lines"></span>
+<span class="navbar-toggler-bar burger-lines"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-end">
+<ul class="nav navbar-nav mr-auto">
+<form class="navbar-form navbar-left navbar-search-form" role="search">
+<div class="input-group">
+<i class="nc-icon nc-zoom-split"></i>
+<input type="text" value="" class="form-control" placeholder="Search...">
+</div>
+</form>
+</ul>
+<ul class="navbar-nav">
+<li class="dropdown nav-item">
+<a href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/charts.html#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+<i class="nc-icon nc-planet"></i>
+</a>
+<ul class="dropdown-menu">
+<a class="dropdown-item" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/charts.html#">Create New Post</a>
+<a class="dropdown-item" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/charts.html#">Manage Something</a>
+<a class="dropdown-item" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/charts.html#">Do Nothing</a>
+<a class="dropdown-item" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/charts.html#">Submit to live</a>
+<li class="divider"></li>
+<a class="dropdown-item" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/charts.html#">Another action</a>
+</ul>
+</li>
+<li class="dropdown nav-item">
+<a href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/charts.html#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+<i class="nc-icon nc-bell-55"></i>
+<span class="notification">5</span>
+<span class="d-lg-none">Notification</span>
+</a>
+<ul class="dropdown-menu">
+<a class="dropdown-item" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/charts.html#">Notification 1</a>
+<a class="dropdown-item" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/charts.html#">Notification 2</a>
+<a class="dropdown-item" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/charts.html#">Notification 3</a>
+<a class="dropdown-item" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/charts.html#">Notification 4</a>
+<a class="dropdown-item" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/charts.html#">Notification 5</a>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="https://example.com/" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<i class="nc-icon nc-bullet-list-67"></i>
+</a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+<a class="dropdown-item" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/charts.html#">
+<i class="nc-icon nc-email-85"></i> Messages
+</a>
+<a class="dropdown-item" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/charts.html#">
+<i class="nc-icon nc-umbrella-13"></i> Help Center
+</a>
+<a class="dropdown-item" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/charts.html#">
+<i class="nc-icon nc-settings-90"></i> Settings
+</a>
+<div class="divider"></div>
+<a class="dropdown-item" href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/charts.html#">
+<i class="nc-icon nc-lock-circle-open"></i> Lock Screen
+</a>
+<a href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/charts.html#" class="dropdown-item text-danger">
+<i class="nc-icon nc-button-power"></i> Log out
+</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+
+<div class="content">
+<div class="container-fluid">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-6">
+<div class="card ">
+<div class="card-header ">
+<h4 class="card-title">24 Hours Performance</h4>
+<p class="card-category">Line Chart</p>
+</div>
+<div class="card-body ">
+<div id="chartPerformance" class="ct-chart "><svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="260px" class="ct-chart-line" style="width: 100%; height: 260px;"><g class="ct-grids"><line y1="225" y2="225" x1="50" x2="523" class="ct-grid ct-vertical"></line><line y1="195" y2="195" x1="50" x2="523" class="ct-grid ct-vertical"></line><line y1="165" y2="165" x1="50" x2="523" class="ct-grid ct-vertical"></line><line y1="135" y2="135" x1="50" x2="523" class="ct-grid ct-vertical"></line><line y1="105" y2="105" x1="50" x2="523" class="ct-grid ct-vertical"></line><line y1="75" y2="75" x1="50" x2="523" class="ct-grid ct-vertical"></line><line y1="45" y2="45" x1="50" x2="523" class="ct-grid ct-vertical"></line><line y1="15" y2="15" x1="50" x2="523" class="ct-grid ct-vertical"></line></g><g><g class="ct-series ct-series-a"><path d="M50,213C57.167,203,78.667,167,93,153C107.333,139,121.667,131,136,129C150.333,127,164.667,133,179,141C193.333,149,207.667,177,222,177C236.333,177,250.667,149,265,141C279.333,133,293.667,139,308,129C322.333,119,336.667,97,351,81C365.333,65,379.667,43,394,33C408.333,23,422.667,17,437,21C451.333,25,465.667,49,480,57C494.333,65,515.833,67,523,69" class="ct-line"></path></g></g><g class="ct-labels"><foreignobject style="overflow: visible;" x="50" y="230" width="43" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 43px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">6pm</span></foreignobject><foreignobject style="overflow: visible;" x="93" y="230" width="43" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 43px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">9pm</span></foreignobject><foreignobject style="overflow: visible;" x="136" y="230" width="43" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 43px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">11pm</span></foreignobject><foreignobject style="overflow: visible;" x="179" y="230" width="43" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 43px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">2am</span></foreignobject><foreignobject style="overflow: visible;" x="222" y="230" width="43" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 43px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">4am</span></foreignobject><foreignobject style="overflow: visible;" x="265" y="230" width="43" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 43px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">8am</span></foreignobject><foreignobject style="overflow: visible;" x="308" y="230" width="43" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 43px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">2pm</span></foreignobject><foreignobject style="overflow: visible;" x="351" y="230" width="43" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 43px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">5pm</span></foreignobject><foreignobject style="overflow: visible;" x="394" y="230" width="43" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 43px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">8pm</span></foreignobject><foreignobject style="overflow: visible;" x="437" y="230" width="43" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 43px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">11pm</span></foreignobject><foreignobject style="overflow: visible;" x="480" y="230" width="43" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 43px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">4am</span></foreignobject><foreignobject style="overflow: visible;" y="195" x="10" height="30" width="30"><span class="ct-label ct-vertical ct-start" style="height: 30px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">0</span></foreignobject><foreignobject style="overflow: visible;" y="165" x="10" height="30" width="30"><span class="ct-label ct-vertical ct-start" style="height: 30px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">2.5</span></foreignobject><foreignobject style="overflow: visible;" y="135" x="10" height="30" width="30"><span class="ct-label ct-vertical ct-start" style="height: 30px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">5</span></foreignobject><foreignobject style="overflow: visible;" y="105" x="10" height="30" width="30"><span class="ct-label ct-vertical ct-start" style="height: 30px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">7.5</span></foreignobject><foreignobject style="overflow: visible;" y="75" x="10" height="30" width="30"><span class="ct-label ct-vertical ct-start" style="height: 30px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">10</span></foreignobject><foreignobject style="overflow: visible;" y="45" x="10" height="30" width="30"><span class="ct-label ct-vertical ct-start" style="height: 30px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">12.5</span></foreignobject><foreignobject style="overflow: visible;" y="15" x="10" height="30" width="30"><span class="ct-label ct-vertical ct-start" style="height: 30px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">15</span></foreignobject><foreignobject style="overflow: visible;" y="-15" x="10" height="30" width="30"><span class="ct-label ct-vertical ct-start" style="height: 30px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">17.5</span></foreignobject></g></svg></div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card ">
+<div class="card-header ">
+<h4 class="card-title">NASDAQ: AAPL</h4>
+<p class="card-category">Line Chart with Points</p>
+</div>
+<div class="card-body ">
+<div id="chartStock" class="ct-chart "><svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="260px" class="ct-chart-line" style="width: 100%; height: 260px;"><g class="ct-grids"><line x1="50" x2="50" y1="15" y2="225" class="ct-grid ct-horizontal"></line><line x1="102.55555555555556" x2="102.55555555555556" y1="15" y2="225" class="ct-grid ct-horizontal"></line><line x1="155.11111111111111" x2="155.11111111111111" y1="15" y2="225" class="ct-grid ct-horizontal"></line><line x1="207.66666666666669" x2="207.66666666666669" y1="15" y2="225" class="ct-grid ct-horizontal"></line><line x1="260.22222222222223" x2="260.22222222222223" y1="15" y2="225" class="ct-grid ct-horizontal"></line><line x1="312.77777777777777" x2="312.77777777777777" y1="15" y2="225" class="ct-grid ct-horizontal"></line><line x1="365.33333333333337" x2="365.33333333333337" y1="15" y2="225" class="ct-grid ct-horizontal"></line><line x1="417.8888888888889" x2="417.8888888888889" y1="15" y2="225" class="ct-grid ct-horizontal"></line><line x1="470.44444444444446" x2="470.44444444444446" y1="15" y2="225" class="ct-grid ct-horizontal"></line><line y1="225" y2="225" x1="50" x2="523" class="ct-grid ct-vertical"></line><line y1="183" y2="183" x1="50" x2="523" class="ct-grid ct-vertical"></line><line y1="141" y2="141" x1="50" x2="523" class="ct-grid ct-vertical"></line><line y1="99" y2="99" x1="50" x2="523" class="ct-grid ct-vertical"></line><line y1="57" y2="57" x1="50" x2="523" class="ct-grid ct-vertical"></line><line y1="15" y2="15" x1="50" x2="523" class="ct-grid ct-vertical"></line></g><g><g class="ct-series ct-series-a"><path d="M50,187.704L102.556,166.368L155.111,153.97L207.667,137.758L260.222,120.487L312.778,90.214L365.333,120.487L417.889,87.038L470.444,52.8L523,44.854" class="ct-line ct-green"></path><line x1="50" y1="187.704" x2="50.01" y2="187.704" class="ct-point ct-green" ct:value="22.2"></line><line x1="102.55555555555556" y1="166.368" x2="102.56555555555556" y2="166.368" class="ct-point ct-green" ct:value="34.9"></line><line x1="155.11111111111111" y1="153.96959999999999" x2="155.1211111111111" y2="153.96959999999999" class="ct-point ct-green" ct:value="42.28"></line><line x1="207.66666666666669" y1="137.75760000000002" x2="207.67666666666668" y2="137.75760000000002" class="ct-point ct-green" ct:value="51.93"></line><line x1="260.22222222222223" y1="120.4872" x2="260.2322222222222" y2="120.4872" class="ct-point ct-green" ct:value="62.21"></line><line x1="312.77777777777777" y1="90.21360000000001" x2="312.78777777777776" y2="90.21360000000001" class="ct-point ct-green" ct:value="80.23"></line><line x1="365.33333333333337" y1="120.4872" x2="365.34333333333336" y2="120.4872" class="ct-point ct-green" ct:value="62.21"></line><line x1="417.8888888888889" y1="87.0384" x2="417.8988888888889" y2="87.0384" class="ct-point ct-green" ct:value="82.12"></line><line x1="470.44444444444446" y1="52.80000000000001" x2="470.45444444444445" y2="52.80000000000001" class="ct-point ct-green" ct:value="102.5"></line><line x1="523" y1="44.8536" x2="523.01" y2="44.8536" class="ct-point ct-green" ct:value="107.23"></line></g></g><g class="ct-labels"><foreignobject style="overflow: visible;" x="50" y="230" width="52.55555555555556" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 53px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">'07</span></foreignobject><foreignobject style="overflow: visible;" x="102.55555555555556" y="230" width="52.55555555555556" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 53px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">'08</span></foreignobject><foreignobject style="overflow: visible;" x="155.11111111111111" y="230" width="52.55555555555557" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 53px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">'09</span></foreignobject><foreignobject style="overflow: visible;" x="207.66666666666669" y="230" width="52.55555555555554" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 53px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">'10</span></foreignobject><foreignobject style="overflow: visible;" x="260.22222222222223" y="230" width="52.55555555555554" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 53px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">'11</span></foreignobject><foreignobject style="overflow: visible;" x="312.77777777777777" y="230" width="52.5555555555556" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 53px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">'12</span></foreignobject><foreignobject style="overflow: visible;" x="365.33333333333337" y="230" width="52.55555555555554" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 53px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">'13</span></foreignobject><foreignobject style="overflow: visible;" x="417.8888888888889" y="230" width="52.55555555555554" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 53px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">'14</span></foreignobject><foreignobject style="overflow: visible;" x="470.44444444444446" y="230" width="52.55555555555554" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 53px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">'15</span></foreignobject><foreignobject style="overflow: visible;" y="183" x="10" height="42" width="30"><span class="ct-label ct-vertical ct-start" style="height: 42px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">$0</span></foreignobject><foreignobject style="overflow: visible;" y="141" x="10" height="42" width="30"><span class="ct-label ct-vertical ct-start" style="height: 42px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">$25</span></foreignobject><foreignobject style="overflow: visible;" y="99" x="10" height="42" width="30"><span class="ct-label ct-vertical ct-start" style="height: 42px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">$50</span></foreignobject><foreignobject style="overflow: visible;" y="57" x="10" height="42" width="30"><span class="ct-label ct-vertical ct-start" style="height: 42px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">$75</span></foreignobject><foreignobject style="overflow: visible;" y="15" x="10" height="42" width="30"><span class="ct-label ct-vertical ct-start" style="height: 42px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">$100</span></foreignobject><foreignobject style="overflow: visible;" y="-15" x="10" height="30" width="30"><span class="ct-label ct-vertical ct-start" style="height: 30px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">$125</span></foreignobject></g></svg></div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card ">
+<div class="card-header ">
+<h4 class="card-title">User Behavior</h4>
+<p class="card-category">Multiple Lines Charts</p>
+</div>
+<div class="card-body ">
+<div id="chartBehaviour" class="ct-chart"><svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="100%" class="ct-chart-line" style="width: 100%; height: 100%;"><g class="ct-grids"><line x1="50" x2="50" y1="15" y2="115" class="ct-grid ct-horizontal"></line><line x1="97.3" x2="97.3" y1="15" y2="115" class="ct-grid ct-horizontal"></line><line x1="144.6" x2="144.6" y1="15" y2="115" class="ct-grid ct-horizontal"></line><line x1="191.89999999999998" x2="191.89999999999998" y1="15" y2="115" class="ct-grid ct-horizontal"></line><line x1="239.2" x2="239.2" y1="15" y2="115" class="ct-grid ct-horizontal"></line><line x1="286.5" x2="286.5" y1="15" y2="115" class="ct-grid ct-horizontal"></line><line x1="333.79999999999995" x2="333.79999999999995" y1="15" y2="115" class="ct-grid ct-horizontal"></line><line x1="381.09999999999997" x2="381.09999999999997" y1="15" y2="115" class="ct-grid ct-horizontal"></line><line x1="428.4" x2="428.4" y1="15" y2="115" class="ct-grid ct-horizontal"></line><line x1="475.7" x2="475.7" y1="15" y2="115" class="ct-grid ct-horizontal"></line><line y1="115" y2="115" x1="50" x2="523" class="ct-grid ct-vertical"></line><line y1="75" y2="75" x1="50" x2="523" class="ct-grid ct-vertical"></line><line y1="35" y2="35" x1="50" x2="523" class="ct-grid ct-vertical"></line></g><g><g class="ct-series ct-series-a"><path d="M50,86.3L97.3,76.5L144.6,66L191.9,59.6L239.2,56.4L286.5,45.2L333.8,45.5L381.1,39.8L428.4,36.2L475.7,30.4L523,20.6" class="ct-line"></path><line x1="50" y1="86.3" x2="50.01" y2="86.3" class="ct-point" ct:value="287"></line><line x1="97.3" y1="76.5" x2="97.31" y2="76.5" class="ct-point" ct:value="385"></line><line x1="144.6" y1="66" x2="144.60999999999999" y2="66" class="ct-point" ct:value="490"></line><line x1="191.89999999999998" y1="59.6" x2="191.90999999999997" y2="59.6" class="ct-point" ct:value="554"></line><line x1="239.2" y1="56.4" x2="239.20999999999998" y2="56.4" class="ct-point" ct:value="586"></line><line x1="286.5" y1="45.2" x2="286.51" y2="45.2" class="ct-point" ct:value="698"></line><line x1="333.79999999999995" y1="45.5" x2="333.80999999999995" y2="45.5" class="ct-point" ct:value="695"></line><line x1="381.09999999999997" y1="39.8" x2="381.10999999999996" y2="39.8" class="ct-point" ct:value="752"></line><line x1="428.4" y1="36.2" x2="428.40999999999997" y2="36.2" class="ct-point" ct:value="788"></line><line x1="475.7" y1="30.400000000000006" x2="475.71" y2="30.400000000000006" class="ct-point" ct:value="846"></line><line x1="523" y1="20.599999999999994" x2="523.01" y2="20.599999999999994" class="ct-point" ct:value="944"></line></g><g class="ct-series ct-series-b"><path d="M50,108.3L97.3,99.8L144.6,100.7L191.9,86.3L239.2,81.5L286.5,71.5L333.8,71.3L381.1,61.1L428.4,60.8L475.7,60.6L523,50.3" class="ct-line"></path><line x1="50" y1="108.3" x2="50.01" y2="108.3" class="ct-point" ct:value="67"></line><line x1="97.3" y1="99.8" x2="97.31" y2="99.8" class="ct-point" ct:value="152"></line><line x1="144.6" y1="100.7" x2="144.60999999999999" y2="100.7" class="ct-point" ct:value="143"></line><line x1="191.89999999999998" y1="86.3" x2="191.90999999999997" y2="86.3" class="ct-point" ct:value="287"></line><line x1="239.2" y1="81.5" x2="239.20999999999998" y2="81.5" class="ct-point" ct:value="335"></line><line x1="286.5" y1="71.5" x2="286.51" y2="71.5" class="ct-point" ct:value="435"></line><line x1="333.79999999999995" y1="71.3" x2="333.80999999999995" y2="71.3" class="ct-point" ct:value="437"></line><line x1="381.09999999999997" y1="61.1" x2="381.10999999999996" y2="61.1" class="ct-point" ct:value="539"></line><line x1="428.4" y1="60.8" x2="428.40999999999997" y2="60.8" class="ct-point" ct:value="542"></line><line x1="475.7" y1="60.6" x2="475.71" y2="60.6" class="ct-point" ct:value="544"></line><line x1="523" y1="50.3" x2="523.01" y2="50.3" class="ct-point" ct:value="647"></line></g><g class="ct-series ct-series-c"><path d="M50,112.7L97.3,103.7L144.6,108.3L191.9,96L239.2,91.1L286.5,84.3L333.8,84.2L381.1,71.1L428.4,74L475.7,74L523,64.1" class="ct-line"></path><line x1="50" y1="112.7" x2="50.01" y2="112.7" class="ct-point" ct:value="23"></line><line x1="97.3" y1="103.7" x2="97.31" y2="103.7" class="ct-point" ct:value="113"></line><line x1="144.6" y1="108.3" x2="144.60999999999999" y2="108.3" class="ct-point" ct:value="67"></line><line x1="191.89999999999998" y1="96" x2="191.90999999999997" y2="96" class="ct-point" ct:value="190"></line><line x1="239.2" y1="91.1" x2="239.20999999999998" y2="91.1" class="ct-point" ct:value="239"></line><line x1="286.5" y1="84.3" x2="286.51" y2="84.3" class="ct-point" ct:value="307"></line><line x1="333.79999999999995" y1="84.2" x2="333.80999999999995" y2="84.2" class="ct-point" ct:value="308"></line><line x1="381.09999999999997" y1="71.1" x2="381.10999999999996" y2="71.1" class="ct-point" ct:value="439"></line><line x1="428.4" y1="74" x2="428.40999999999997" y2="74" class="ct-point" ct:value="410"></line><line x1="475.7" y1="74" x2="475.71" y2="74" class="ct-point" ct:value="410"></line><line x1="523" y1="64.1" x2="523.01" y2="64.1" class="ct-point" ct:value="509"></line></g></g><g class="ct-labels"><foreignobject style="overflow: visible;" x="50" y="120" width="47.3" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 47px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">'06</span></foreignobject><foreignobject style="overflow: visible;" x="97.3" y="120" width="47.3" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 47px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">'07</span></foreignobject><foreignobject style="overflow: visible;" x="144.6" y="120" width="47.29999999999998" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 47px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">'08</span></foreignobject><foreignobject style="overflow: visible;" x="191.89999999999998" y="120" width="47.30000000000001" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 47px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">'09</span></foreignobject><foreignobject style="overflow: visible;" x="239.2" y="120" width="47.30000000000001" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 47px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">'10</span></foreignobject><foreignobject style="overflow: visible;" x="286.5" y="120" width="47.299999999999955" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 47px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">'11</span></foreignobject><foreignobject style="overflow: visible;" x="333.79999999999995" y="120" width="47.30000000000001" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 47px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">'12</span></foreignobject><foreignobject style="overflow: visible;" x="381.09999999999997" y="120" width="47.30000000000001" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 47px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">'13</span></foreignobject><foreignobject style="overflow: visible;" x="428.4" y="120" width="47.30000000000001" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 47px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">'14</span></foreignobject><foreignobject style="overflow: visible;" x="475.7" y="120" width="47.30000000000001" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 47px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">'15</span></foreignobject><foreignobject style="overflow: visible;" y="75" x="10" height="40" width="30"><span class="ct-label ct-vertical ct-start" style="height: 40px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">0</span></foreignobject><foreignobject style="overflow: visible;" y="35" x="10" height="40" width="30"><span class="ct-label ct-vertical ct-start" style="height: 40px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">400</span></foreignobject><foreignobject style="overflow: visible;" y="5" x="10" height="30" width="30"><span class="ct-label ct-vertical ct-start" style="height: 30px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">800</span></foreignobject></g></svg></div>
+</div>
+<div class="card-footer ">
+<div class="legend">
+<i class="fa fa-circle text-info"></i> Open
+<i class="fa fa-circle text-danger"></i> Click
+<i class="fa fa-circle text-warning"></i> Click Second Time
+</div>
+<hr>
+<div class="stats">
+<i class="fa fa-history"></i> Updated 3 minutes ago
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card ">
+<div class="card-header ">
+<h4 class="card-title">Public Preferences</h4>
+<p class="card-category">Pie Chart</p>
+</div>
+<div class="card-body ">
+<div id="chartPreferences" class="ct-chart ct-perfect-fourth"><svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="100%" class="ct-chart-pie" style="width: 100%; height: 100%;"><g class="ct-series ct-series-c"><path d="M161.5,5A116,116,0,0,0,118.421,13.296L161.5,121Z" class="ct-slice-pie" ct:value="6"></path></g><g class="ct-series ct-series-b"><path d="M118.798,13.146A116,116,0,0,0,82.388,205.837L161.5,121Z" class="ct-slice-pie" ct:value="32"></path></g><g class="ct-series ct-series-a"><path d="M82.093,205.56A116,116,0,1,0,161.5,5L161.5,121Z" class="ct-slice-pie" ct:value="62"></path></g><g><text dx="215.4270361815186" dy="142.35122405571133" text-anchor="middle" class="ct-label">62%</text><text dx="104.52733945773605" dy="110.13188375402804" text-anchor="middle" class="ct-label">32%</text><text dx="150.6318837540279" dy="64.02733945773608" text-anchor="middle" class="ct-label">6%</text></g></svg></div>
+</div>
+<div class="card-footer ">
+<div class="legend">
+<i class="fa fa-circle text-info"></i> Open
+<i class="fa fa-circle text-danger"></i> Bounce
+<i class="fa fa-circle text-warning"></i> Unsubscribe
+</div>
+<hr>
+<div class="stats">
+<i class="fa fa-clock-o"></i> Campaign sent 2 days ago
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card ">
+<div class="card-header ">
+<h4 class="card-title">Views</h4>
+<p class="card-category">Bar Chart</p>
+</div>
+<div class="card-body ">
+<div id="chartViews" class="ct-chart"><svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="100%" class="ct-chart-bar" style="width: 100%; height: 100%;"><g class="ct-grids"><line y1="115" y2="115" x1="50" x2="523" class="ct-grid ct-vertical"></line><line y1="92.77777777777777" y2="92.77777777777777" x1="50" x2="523" class="ct-grid ct-vertical"></line><line y1="70.55555555555556" y2="70.55555555555556" x1="50" x2="523" class="ct-grid ct-vertical"></line><line y1="48.33333333333333" y2="48.33333333333333" x1="50" x2="523" class="ct-grid ct-vertical"></line><line y1="26.111111111111114" y2="26.111111111111114" x1="50" x2="523" class="ct-grid ct-vertical"></line></g><g><g class="ct-series ct-series-a"><line x1="69.70833333333333" x2="69.70833333333333" y1="115" y2="54.77777777777778" class="ct-bar ct-azure" ct:value="542"></line><line x1="109.12499999999999" x2="109.12499999999999" y1="115" y2="65.77777777777777" class="ct-bar ct-azure" ct:value="443"></line><line x1="148.54166666666666" x2="148.54166666666666" y1="115" y2="79.44444444444444" class="ct-bar ct-azure" ct:value="320"></line><line x1="187.95833333333334" x2="187.95833333333334" y1="115" y2="28.33333333333333" class="ct-bar ct-azure" ct:value="780"></line><line x1="227.375" x2="227.375" y1="115" y2="53.55555555555556" class="ct-bar ct-azure" ct:value="553"></line><line x1="266.79166666666663" x2="266.79166666666663" y1="115" y2="64.66666666666666" class="ct-bar ct-azure" ct:value="453"></line><line x1="306.2083333333333" x2="306.2083333333333" y1="115" y2="78.77777777777777" class="ct-bar ct-azure" ct:value="326"></line><line x1="345.62499999999994" x2="345.62499999999994" y1="115" y2="66.77777777777777" class="ct-bar ct-azure" ct:value="434"></line><line x1="385.04166666666663" x2="385.04166666666663" y1="115" y2="51.888888888888886" class="ct-bar ct-azure" ct:value="568"></line><line x1="424.4583333333333" x2="424.4583333333333" y1="115" y2="47.22222222222223" class="ct-bar ct-azure" ct:value="610"></line><line x1="463.87499999999994" x2="463.87499999999994" y1="115" y2="31" class="ct-bar ct-azure" ct:value="756"></line><line x1="503.29166666666663" x2="503.29166666666663" y1="115" y2="15.555555555555557" class="ct-bar ct-azure" ct:value="895"></line></g></g><g class="ct-labels"><foreignobject style="overflow: visible;" x="50" y="120" width="39.416666666666664" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 39px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">Jan</span></foreignobject><foreignobject style="overflow: visible;" x="89.41666666666666" y="120" width="39.416666666666664" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 39px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">Feb</span></foreignobject><foreignobject style="overflow: visible;" x="128.83333333333331" y="120" width="39.41666666666667" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 39px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">Mar</span></foreignobject><foreignobject style="overflow: visible;" x="168.25" y="120" width="39.41666666666666" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 39px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">Apr</span></foreignobject><foreignobject style="overflow: visible;" x="207.66666666666666" y="120" width="39.41666666666666" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 39px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">Mai</span></foreignobject><foreignobject style="overflow: visible;" x="247.08333333333331" y="120" width="39.416666666666686" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 39px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">Jun</span></foreignobject><foreignobject style="overflow: visible;" x="286.5" y="120" width="39.41666666666663" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 39px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">Jul</span></foreignobject><foreignobject style="overflow: visible;" x="325.91666666666663" y="120" width="39.416666666666686" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 39px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">Aug</span></foreignobject><foreignobject style="overflow: visible;" x="365.3333333333333" y="120" width="39.416666666666686" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 39px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">Sep</span></foreignobject><foreignobject style="overflow: visible;" x="404.75" y="120" width="39.41666666666663" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 39px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">Oct</span></foreignobject><foreignobject style="overflow: visible;" x="444.16666666666663" y="120" width="39.416666666666686" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 39px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">Nov</span></foreignobject><foreignobject style="overflow: visible;" x="483.5833333333333" y="120" width="39.416666666666686" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 39px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">Dec</span></foreignobject><foreignobject style="overflow: visible;" y="92.77777777777777" x="10" height="22.22222222222222" width="30"><span class="ct-label ct-vertical ct-start" style="height: 22px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">0</span></foreignobject><foreignobject style="overflow: visible;" y="70.55555555555554" x="10" height="22.22222222222222" width="30"><span class="ct-label ct-vertical ct-start" style="height: 22px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">200</span></foreignobject><foreignobject style="overflow: visible;" y="48.33333333333333" x="10" height="22.22222222222223" width="30"><span class="ct-label ct-vertical ct-start" style="height: 22px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">400</span></foreignobject><foreignobject style="overflow: visible;" y="26.111111111111114" x="10" height="22.222222222222214" width="30"><span class="ct-label ct-vertical ct-start" style="height: 22px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">600</span></foreignobject><foreignobject style="overflow: visible;" y="-3.8888888888888857" x="10" height="30" width="30"><span class="ct-label ct-vertical ct-start" style="height: 30px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">800</span></foreignobject></g></svg></div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card ">
+<div class="card-header ">
+<h4 class="card-title">Activity</h4>
+<p class="card-category">Multiple Bars Chart</p>
+</div>
+<div class="card-body ">
+<div id="chartActivity" class="ct-chart"><svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="245px" class="ct-chart-bar" style="width: 100%; height: 245px;"><g class="ct-grids"><line y1="210" y2="210" x1="50" x2="523" class="ct-grid ct-vertical"></line><line y1="188.33333333333334" y2="188.33333333333334" x1="50" x2="523" class="ct-grid ct-vertical"></line><line y1="166.66666666666666" y2="166.66666666666666" x1="50" x2="523" class="ct-grid ct-vertical"></line><line y1="145" y2="145" x1="50" x2="523" class="ct-grid ct-vertical"></line><line y1="123.33333333333333" y2="123.33333333333333" x1="50" x2="523" class="ct-grid ct-vertical"></line><line y1="101.66666666666667" y2="101.66666666666667" x1="50" x2="523" class="ct-grid ct-vertical"></line><line y1="80" y2="80" x1="50" x2="523" class="ct-grid ct-vertical"></line><line y1="58.33333333333334" y2="58.33333333333334" x1="50" x2="523" class="ct-grid ct-vertical"></line><line y1="36.66666666666666" y2="36.66666666666666" x1="50" x2="523" class="ct-grid ct-vertical"></line><line y1="15" y2="15" x1="50" x2="523" class="ct-grid ct-vertical"></line></g><g><g class="ct-series ct-series-a"><line x1="64.70833333333333" x2="64.70833333333333" y1="210" y2="92.56666666666666" class="ct-bar" ct:value="542"></line><line x1="104.12499999999999" x2="104.12499999999999" y1="210" y2="114.01666666666667" class="ct-bar" ct:value="443"></line><line x1="143.54166666666666" x2="143.54166666666666" y1="210" y2="140.66666666666669" class="ct-bar" ct:value="320"></line><line x1="182.95833333333334" x2="182.95833333333334" y1="210" y2="41" class="ct-bar" ct:value="780"></line><line x1="222.375" x2="222.375" y1="210" y2="90.18333333333334" class="ct-bar" ct:value="553"></line><line x1="261.79166666666663" x2="261.79166666666663" y1="210" y2="111.85" class="ct-bar" ct:value="453"></line><line x1="301.2083333333333" x2="301.2083333333333" y1="210" y2="139.36666666666667" class="ct-bar" ct:value="326"></line><line x1="340.62499999999994" x2="340.62499999999994" y1="210" y2="115.96666666666667" class="ct-bar" ct:value="434"></line><line x1="380.04166666666663" x2="380.04166666666663" y1="210" y2="86.93333333333334" class="ct-bar" ct:value="568"></line><line x1="419.4583333333333" x2="419.4583333333333" y1="210" y2="77.83333333333334" class="ct-bar" ct:value="610"></line><line x1="458.87499999999994" x2="458.87499999999994" y1="210" y2="46.19999999999999" class="ct-bar" ct:value="756"></line><line x1="498.29166666666663" x2="498.29166666666663" y1="210" y2="16.083333333333343" class="ct-bar" ct:value="895"></line></g><g class="ct-series ct-series-b"><line x1="74.70833333333333" x2="74.70833333333333" y1="210" y2="120.73333333333333" class="ct-bar" ct:value="412"></line><line x1="114.12499999999999" x2="114.12499999999999" y1="210" y2="157.35" class="ct-bar" ct:value="243"></line><line x1="153.54166666666666" x2="153.54166666666666" y1="210" y2="149.33333333333334" class="ct-bar" ct:value="280"></line><line x1="192.95833333333334" x2="192.95833333333334" y1="210" y2="84.33333333333333" class="ct-bar" ct:value="580"></line><line x1="232.375" x2="232.375" y1="210" y2="111.85" class="ct-bar" ct:value="453"></line><line x1="271.79166666666663" x2="271.79166666666663" y1="210" y2="133.51666666666665" class="ct-bar" ct:value="353"></line><line x1="311.2083333333333" x2="311.2083333333333" y1="210" y2="145" class="ct-bar" ct:value="300"></line><line x1="350.62499999999994" x2="350.62499999999994" y1="210" y2="131.13333333333333" class="ct-bar" ct:value="364"></line><line x1="390.04166666666663" x2="390.04166666666663" y1="210" y2="130.26666666666665" class="ct-bar" ct:value="368"></line><line x1="429.4583333333333" x2="429.4583333333333" y1="210" y2="121.16666666666667" class="ct-bar" ct:value="410"></line><line x1="468.87499999999994" x2="468.87499999999994" y1="210" y2="72.19999999999999" class="ct-bar" ct:value="636"></line><line x1="508.29166666666663" x2="508.29166666666663" y1="210" y2="59.41666666666666" class="ct-bar" ct:value="695"></line></g></g><g class="ct-labels"><foreignobject style="overflow: visible;" x="50" y="215" width="39.416666666666664" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 39px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">Jan</span></foreignobject><foreignobject style="overflow: visible;" x="89.41666666666666" y="215" width="39.416666666666664" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 39px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">Feb</span></foreignobject><foreignobject style="overflow: visible;" x="128.83333333333331" y="215" width="39.41666666666667" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 39px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">Mar</span></foreignobject><foreignobject style="overflow: visible;" x="168.25" y="215" width="39.41666666666666" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 39px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">Apr</span></foreignobject><foreignobject style="overflow: visible;" x="207.66666666666666" y="215" width="39.41666666666666" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 39px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">Mai</span></foreignobject><foreignobject style="overflow: visible;" x="247.08333333333331" y="215" width="39.416666666666686" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 39px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">Jun</span></foreignobject><foreignobject style="overflow: visible;" x="286.5" y="215" width="39.41666666666663" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 39px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">Jul</span></foreignobject><foreignobject style="overflow: visible;" x="325.91666666666663" y="215" width="39.416666666666686" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 39px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">Aug</span></foreignobject><foreignobject style="overflow: visible;" x="365.3333333333333" y="215" width="39.416666666666686" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 39px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">Sep</span></foreignobject><foreignobject style="overflow: visible;" x="404.75" y="215" width="39.41666666666663" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 39px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">Oct</span></foreignobject><foreignobject style="overflow: visible;" x="444.16666666666663" y="215" width="39.416666666666686" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 39px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">Nov</span></foreignobject><foreignobject style="overflow: visible;" x="483.5833333333333" y="215" width="39.416666666666686" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 39px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">Dec</span></foreignobject><foreignobject style="overflow: visible;" y="188.33333333333334" x="10" height="21.666666666666668" width="30"><span class="ct-label ct-vertical ct-start" style="height: 22px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">0</span></foreignobject><foreignobject style="overflow: visible;" y="166.66666666666669" x="10" height="21.666666666666668" width="30"><span class="ct-label ct-vertical ct-start" style="height: 22px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">100</span></foreignobject><foreignobject style="overflow: visible;" y="145" x="10" height="21.666666666666664" width="30"><span class="ct-label ct-vertical ct-start" style="height: 22px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">200</span></foreignobject><foreignobject style="overflow: visible;" y="123.33333333333333" x="10" height="21.66666666666667" width="30"><span class="ct-label ct-vertical ct-start" style="height: 22px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">300</span></foreignobject><foreignobject style="overflow: visible;" y="101.66666666666667" x="10" height="21.666666666666657" width="30"><span class="ct-label ct-vertical ct-start" style="height: 22px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">400</span></foreignobject><foreignobject style="overflow: visible;" y="80" x="10" height="21.66666666666667" width="30"><span class="ct-label ct-vertical ct-start" style="height: 22px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">500</span></foreignobject><foreignobject style="overflow: visible;" y="58.33333333333334" x="10" height="21.666666666666657" width="30"><span class="ct-label ct-vertical ct-start" style="height: 22px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">600</span></foreignobject><foreignobject style="overflow: visible;" y="36.66666666666666" x="10" height="21.666666666666686" width="30"><span class="ct-label ct-vertical ct-start" style="height: 22px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">700</span></foreignobject><foreignobject style="overflow: visible;" y="15" x="10" height="21.666666666666657" width="30"><span class="ct-label ct-vertical ct-start" style="height: 22px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">800</span></foreignobject><foreignobject style="overflow: visible;" y="-15" x="10" height="30" width="30"><span class="ct-label ct-vertical ct-start" style="height: 30px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">900</span></foreignobject></g></svg></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="footer">
+<div class="container">
+<nav>
+<ul class="footer-menu">
+<li>
+<a href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/charts.html#">
+Home
+</a>
+</li>
+<li>
+<a href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/charts.html#">
+Company
+</a>
+</li>
+<li>
+<a href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/charts.html#">
+Portfolio
+</a>
+</li>
+<li>
+<a href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/charts.html#">
+Blog
+</a>
+</li>
+</ul>
+<p class="copyright text-center">
+©
+<script>
+                                document.write(new Date().getFullYear())
+                            </script>2024
+<a href="https://www.creative-tim.com/">Creative Tim</a>, made with love for a better web
+</p>
+</nav>
+</div>
+</footer>
+</div>
+</div>
+<div class="fixed-plugin">
+<div class="dropdown show-dropdown">
+<a href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/charts.html#" data-toggle="dropdown">
+<i class="fa fa-cog fa-2x"> </i>
+</a>
+<ul class="dropdown-menu">
+<li class="header-title"> Sidebar Style</li>
+<li class="adjustments-line">
+<a href="javascript:void(0)" class="switch-trigger">
+<p>Background Image</p>
+<label class="switch-image">
+<div class="bootstrap-switch-on bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-animate" style="width: 72px;"><div class="bootstrap-switch-container" style="width: 122px; margin-left: 0px;"><span class="bootstrap-switch-handle-on bootstrap-switch-info" style="width: 50px;">ON</span><span class="bootstrap-switch-label" style="width: 30px;">&nbsp;</span><span class="bootstrap-switch-handle-off bootstrap-switch-info" style="width: 50px;">OFF</span><input type="checkbox" data-toggle="switch" checked="" data-on-color="info" data-off-color="info"></div></div>
+<span class="toggle"></span>
+</label>
+<div class="clearfix"></div>
+</a>
+</li>
+<li class="adjustments-line">
+<a href="javascript:void(0)" class="switch-trigger">
+<p>Sidebar Mini</p>
+<label class="switch-mini">
+<div class="bootstrap-switch-off bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-animate" style="width: 72px;"><div class="bootstrap-switch-container" style="width: 122px; margin-left: -50px;"><span class="bootstrap-switch-handle-on bootstrap-switch-info" style="width: 50px;">ON</span><span class="bootstrap-switch-label" style="width: 30px;">&nbsp;</span><span class="bootstrap-switch-handle-off bootstrap-switch-info" style="width: 50px;">OFF</span><input type="checkbox" data-toggle="switch" data-on-color="info" data-off-color="info"></div></div>
+<span class="toggle"></span>
+</label>
+<div class="clearfix"></div>
+</a>
+</li>
+<li class="adjustments-line">
+<a href="javascript:void(0)" class="switch-trigger">
+<p>Fixed Navbar</p>
+<label class="switch-nav">
+<div class="bootstrap-switch-off bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-animate" style="width: 72px;"><div class="bootstrap-switch-container" style="width: 122px; margin-left: -50px;"><span class="bootstrap-switch-handle-on bootstrap-switch-info" style="width: 50px;">ON</span><span class="bootstrap-switch-label" style="width: 30px;">&nbsp;</span><span class="bootstrap-switch-handle-off bootstrap-switch-info" style="width: 50px;">OFF</span><input type="checkbox" data-toggle="switch" data-on-color="info" data-off-color="info"></div></div>
+<span class="toggle"></span>
+</label>
+<div class="clearfix"></div>
+</a>
+</li>
+<li class="adjustments-line">
+<a href="javascript:void(0)" class="switch-trigger background-color">
+<p>Filters</p>
+<div class="pull-right">
+<span class="badge filter badge-black" data-color="black"></span>
+<span class="badge filter badge-azure" data-color="azure"></span>
+<span class="badge filter badge-green" data-color="green"></span>
+<span class="badge filter badge-orange active" data-color="orange"></span>
+<span class="badge filter badge-red" data-color="red"></span>
+<span class="badge filter badge-purple" data-color="purple"></span>
+</div>
+<div class="clearfix"></div>
+</a>
+</li>
+<li class="header-title">Sidebar Images</li>
+<li class="active">
+<a class="img-holder switch-trigger" href="javascript:void(0)">
+<img src="./chart_files/sidebar-1.jpg" alt="">
+</a>
+</li>
+<li>
+<a class="img-holder switch-trigger" href="javascript:void(0)">
+<img src="./chart_files/sidebar-3.jpg" alt="">
+</a>
+</li>
+<li>
+<a class="img-holder switch-trigger" href="javascript:void(0)">
+<img src="./chart_files/sidebar-4.jpg" alt="">
+</a>
+</li>
+<li>
+<a class="img-holder switch-trigger" href="javascript:void(0)">
+<img src="./chart_files/sidebar-5.jpg" alt="">
+</a>
+</li>
+<li class="button-container">
+<div>
+<a href="https://www.creative-tim.com/product/light-bootstrap-dashboard" target="_blank" class="btn btn-info btn-block">Get free demo!</a>
+</div>
+</li>
+<li class="button-container">
+<div>
+<a href="https://www.creative-tim.com/product/light-bootstrap-dashboard-pro" target="_blank" class="btn btn-warning btn-block">Buy now!</a>
+</div>
+</li>
+<li class="button-container">
+<div>
+<a href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/documentation/tutorial-components.html" target="_blank" class="btn btn-danger btn-block">Documention</a>
+</div>
+</li>
+<li class="header-title" id="sharrreTitle">Thank you for sharing!</li>
+<li class="button-container">
+<button id="twitter" class="btn btn-social btn-twitter btn-round twitter-sharrre sharrre"><i class="fa fa-twitter"></i> · 256</button>
+<button id="facebook" class="btn btn-social btn-facebook btn-round facebook-sharrre sharrre"><i class="fa fa-facebook-square"></i> · 426</button>
+</li>
+</ul>
+</div>
+</div>
+<script defer="" src="./chart_files/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;898afc741b9d3aa5&quot;,&quot;version&quot;:&quot;2024.4.1&quot;,&quot;token&quot;:&quot;1b7cbb72744b40c580f8633c6b62637e&quot;}" crossorigin="anonymous"></script>
+
+
+<script src="./chart_files/jquery.3.2.1.min.js.download" type="text/javascript"></script>
+<script src="./chart_files/popper.min.js.download" type="text/javascript"></script>
+<script src="./chart_files/bootstrap.min.js.download" type="text/javascript"></script>
+
+<script src="./chart_files/bootstrap-switch.js.download"></script>
+
+<script type="text/javascript" src="./chart_files/js(2)"></script>
+
+<script src="./chart_files/chartist.min.js.download"></script>
+
+<script src="./chart_files/bootstrap-notify.js.download"></script>
+
+<script src="./chart_files/jquery.sharrre.js.download"></script>
+
+<script src="./chart_files/jquery-jvectormap.js.download" type="text/javascript"></script>
+
+<script src="./chart_files/moment.min.js.download"></script>
+
+<script src="./chart_files/bootstrap-datetimepicker.js.download"></script>
+
+<script src="./chart_files/sweetalert2.min.js.download" type="text/javascript"></script>
+
+<script src="./chart_files/bootstrap-tagsinput.js.download" type="text/javascript"></script>
+
+<script src="./chart_files/nouislider.js.download" type="text/javascript"></script>
+
+<script src="./chart_files/bootstrap-selectpicker.js.download" type="text/javascript"></script>
+
+<script src="./chart_files/jquery.validate.min.js.download" type="text/javascript"></script>
+
+<script src="./chart_files/jquery.bootstrap-wizard.js.download"></script>
+
+<script src="./chart_files/bootstrap-table.js.download"></script>
+
+<script src="./chart_files/jquery.dataTables.min.js.download"></script>
+
+<script src="./chart_files/fullcalendar.min.js.download"></script>
+
+<script src="./chart_files/light-bootstrap-dashboard.js.download" type="text/javascript"></script>
+
+<script src="./chart_files/demo.js.download"></script>
+<script type="text/javascript">
+    $().ready(function() {
+        demo.initCharts();
+    });
+</script>
+
+<script>
+    ! function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+            n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window,
+        document, 'script', '//connect.facebook.net/en_US/fbevents.js');
+
+    try {
+        fbq('init', '111649226022273');
+        fbq('track', "PageView");
+
+    } catch (err) {
+        console.log('Facebook Track Error:', err);
+    }
+</script>
+<noscript>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=111649226022273&ev=PageView&noscript=1" />
+</noscript>
+
+
+<div class="sweet-container"><div class="sweet-overlay" tabindex="-1"></div><div class="sweet-alert" style="display: none" tabindex="-1"><div class="icon error"><span class="x-mark"><span class="line left"></span><span class="line right"></span></span></div><div class="icon warning"> <span class="body"></span> <span class="dot"></span> </div> <div class="icon info"></div> <div class="icon success"> <span class="line tip"></span> <span class="line long"></span> <div class="placeholder"></div> <div class="fix"></div> </div> <img class="sweet-image"> <h2>Title</h2><div class="sweet-content">Text</div><hr class="sweet-spacer"><button class="sweet-confirm">OK</button><button class="sweet-cancel">Cancel</button></div></div>
+<style>
+  #ofBar {
+    background: #fff;
+    z-index: 999999999;
+    font-size: 16px;
+    color: #333;
+    padding: 16px 40px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 40px;
+    width: 80%;
+    border-radius: 8px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 13px 27px -5px rgba(50,50,93,0.25), 0 8px 16px -8px rgba(0,0,0,0.3), 0 -6px 16px -6px rgba(0,0,0,0.025);
+  }
+
+  #ofBar-logo img {
+    height: 50px;
+  }
+
+  #ofBar-content {
+    display: inline;
+    padding: 0 15px;
+  }
+
+  #ofBar-right {
+    display: flex;
+    align-items: center;
+  }
+
+  #ofBar b {
+    font-size: 15px !important;
+  }
+  #count-down {
+    display: initial;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  #close-bar {
+    font-size: 17px;
+    opacity: 0.5;
+    cursor: pointer;
+    color: #808080;
+    font-weight: bold;
+  }
+  #close-bar:hover{
+    opacity: 1;
+  }
+  #btn-bar {
+    background-image: linear-gradient(310deg, #141727 0%, #3A416F 100%);
+    color: #fff;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12px;
+    opacity: .95;
+    margin-right: 20px;
+    box-shadow: 0 5px 10px -3px rgba(0,0,0,.23), 0 6px 10px -5px rgba(0,0,0,.25);
+  }
+   #btn-bar, #btn-bar:hover, #btn-bar:focus, #btn-bar:active {
+     text-decoration: none !important;
+     color: #fff !important;
+ }
+  #btn-bar:hover{
+    opacity: 1;
+  }
+
+  #btn-bar span, #ofBar-content span {
+    color: red;
+    font-weight: 700;
+  }
+
+  #oldPriceBar {
+    text-decoration: line-through;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    top: 2px;
+    position: relative;
+  }
+  #newPrice{
+    color: #fff;
+    font-size: 19px;
+    font-weight: 700;
+    top: 2px;
+    position: relative;
+    margin-left: 7px;
+  }
+
+  #fromText {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400;
+    margin-right: 3px;
+    top: 0px;
+    position: relative;
+  }
+  
+  #pls-contact-me-on-email {
+    position: absolute;
+    color: white;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 999;
+    cursor: pointer;
+    padding-top: 100px;
+    padding-left: 50px;
+  }
+
+  @media(max-width: 991px){
+
+  }
+  @media (max-width: 768px) {
+    #count-down {
+      display: block;
+      margin-top: 15px;
+    }
+
+    #ofBar {
+      flex-direction: column;
+      align-items: normal;
+    }
+
+    #ofBar-content {
+      margin: 15px 0;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    #ofBar-right {
+      justify-content: flex-end;
+    }
+  }
+</style>
+
+<script type="text/javascript" id="">function setCookie(a,d,c){var b=new Date;b.setTime(b.getTime()+864E5*c);c="expires\x3d"+b.toUTCString();document.cookie=a+"\x3d"+d+";"+c+";path\x3d/"}
+function readDomain(){domain=window.location.hostname;if("hrm.newflex.co.kr"==domain){console.log("Remove the script");var a=document.createElement("div");a.setAttribute("id","pls-contact-me-on-email");a.innerHTML="\x3ch1\x3ePlease Remove the Stolen Google Analytics from \x3ca href\x3d'https://www.creative-tim.com/?ref\x3dstolen-website' target\x3d'_blank' '\x3ecreative-tim.com\x3c/a\x3e Please send an email to beni@creative-tim.com to help you remove our scripts.\x3c/h1\x3e";document.body.insertBefore(a,
+document.body.firstChild)}}function readCookie(a){a+="\x3d";for(var d=document.cookie.split(";"),c=0;c<d.length;c++){for(var b=d[c];" "==b.charAt(0);)b=b.substring(1,b.length);if(0==b.indexOf(a))return b.substring(a.length,b.length)}return null}
+function createOfferBar(){readDomain();var a=document.createElement("div");a.setAttribute("id","ofBar");a.innerHTML="\x3cdiv id\x3d'ofBar-logo'\x3e \x3cimg alt\x3d'creative-tim-logo' src\x3d'https://s3.amazonaws.com/creativetim_bucket/static-assets/logo-ct-black.png'\x3e\x3c/div\x3e\x3cdiv id\x3d'ofBar-content'\x3e\x3cb\x3e50% off Creative Tim Club!\x3c/b\x3e \ud83c\udf89 Lifetime access to all current \x26 future products. Limited time offer! \u2728\x3c/div\x3e\x3cdiv id\x3d'ofBar-right'\x3e\x3ca href\x3d'https://www.creative-tim.com/club?ref\x3dct-demos' target\x3d'_blank' id\x3d'btn-bar'\x3eView Offer\x3c/a\x3e\x3ca id\x3d'close-bar'\x3e\u00d7\x3c/a\x3e\x3c/div\x3e";document.body.insertBefore(a,
+document.body.firstChild)}function closeOfferBar(){document.getElementById("ofBar").setAttribute("style","display:none");setCookie("view_offer_bar","true",1)}var value=readCookie("view_offer_bar");null==value&&(createOfferBar(),document.getElementById("close-bar").addEventListener("click",closeOfferBar));</script>
+	<script type="text/javascript" id="">!function(d,g,e){d.TiktokAnalyticsObject=e;var a=d[e]=d[e]||[];a.methods="page track identify instances debug on off once ready alias group enableCookie disableCookie".split(" ");a.setAndDefer=function(b,c){b[c]=function(){b.push([c].concat(Array.prototype.slice.call(arguments,0)))}};for(d=0;d<a.methods.length;d++)a.setAndDefer(a,a.methods[d]);a.instance=function(b){b=a._i[b]||[];for(var c=0;c<a.methods.length;c++)a.setAndDefer(b,a.methods[c]);return b};a.load=function(b,c){var f="https://analytics.tiktok.com/i18n/pixel/events.js";
+a._i=a._i||{};a._i[b]=[];a._i[b]._u=f;a._t=a._t||{};a._t[b]=+new Date;a._o=a._o||{};a._o[b]=c||{};c=document.createElement("script");c.type="text/javascript";c.async=!0;c.src=f+"?sdkid\x3d"+b+"\x26lib\x3d"+e;b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(c,b)};a.load("CC6UAQBC77U7GVKHLC4G");a.page()}(window,document,"ttq");</script><iframe allow="join-ad-interest-group" data-tagging-id="G-ZF0KSVVM14" data-load-time="1719213952619" height="0" width="0" src="./chart_files/rul.html" style="display: none; visibility: hidden;"></iframe><iframe allow="join-ad-interest-group" data-tagging-id="G-LMRL06STSS" data-load-time="1719213952679" height="0" width="0" src="./chart_files/rul(1).html" style="display: none; visibility: hidden;"></iframe>
+	</body></html>
